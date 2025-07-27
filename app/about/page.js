@@ -26,8 +26,8 @@ export default function AboutPage() {
             Built for Everyone
           </h2>
           <p className="text-gray-600 dark:text-gray-300">
-            Whether you're a developer, storyteller, or student — Blogify is
-            made for you. It's fully open source and completely free.
+            Whether you&apos;re a developer, storyteller, or student — Blogify
+            is made for you. It&apos;s fully open source and completely free.
           </p>
         </div>
 

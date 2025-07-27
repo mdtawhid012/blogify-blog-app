@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const phrases = [
@@ -70,18 +71,22 @@ export default function Page() {
         </div>
 
         <div className="w-full mt-10 lg:mt-0 lg:w-1/2">
-          <img
-            src="main.svg"
+          <Image
+            src="/main.svg"
             alt="Illustration of a person blogging"
+            width={400}
+            height={300}
             className="w-full h-full max-w-md mx-auto"
           />
         </div>
       </section>
       <section className="container bg-gray-100 dark:bg-gray-800 px-4 py-16 mx-auto lg:flex lg:items-center lg:justify-between">
         <div className="w-full lg:w-1/2">
-          <img
+          <Image
             src="/type.webp"
             alt="Writing process illustration"
+            width={400}
+            height={300}
             className="w-full h-full max-w-md mx-auto"
           />
         </div>
@@ -135,9 +140,11 @@ export default function Page() {
         <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3">
           <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/women/68.jpg"
                 alt="User avatar"
+                width={48}
+                height={48}
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
@@ -150,16 +157,18 @@ export default function Page() {
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
-              “Blogger makes it so easy to share my thoughts. I love the
-              simplicity and clean UI!”
+              &ldquo;Blogger makes it so easy to share my thoughts. I love the
+              simplicity and clean UI!&rdquo;
             </p>
           </div>
 
           <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/men/75.jpg"
                 alt="User avatar"
+                width={48}
+                height={48}
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
@@ -172,16 +181,18 @@ export default function Page() {
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
-              “Writing with Blogify is a joy. The markdown support and
-              open-source philosophy are spot-on.”
+              &ldquo;Writing with Blogify is a joy. The markdown support and
+              open-source philosophy are spot-on.&rdquo;
             </p>
           </div>
 
           <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/men/32.jpg"
                 alt="User avatar"
+                width={48}
+                height={48}
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
@@ -194,8 +205,8 @@ export default function Page() {
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
-              “Finally, a platform that&apos;s fast, beautiful, and doesn&apos;t
-              get in my way when I&apos;m writing.”
+              &ldquo;Finally, a platform that&apos;s fast, beautiful, and
+              doesn&apos;t get in my way when I&apos;m writing.&rdquo;
             </p>
           </div>
         </div>
