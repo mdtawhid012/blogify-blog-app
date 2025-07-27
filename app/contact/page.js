@@ -7,7 +7,7 @@ export default function ContactPage() {
         Contact Us
       </h1>
       <p className="text-lg text-center text-gray-600 dark:text-gray-300 mb-12">
-        Have a question or feedback? We'd love to hear from you.
+        Have a question or feedback? We&apos;d love to hear from you.
       </p>
 
       <form className="space-y-6">

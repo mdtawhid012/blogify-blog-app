@@ -12,14 +12,13 @@ const phrases = [
   "a place for ideas.",
 ];
 
-export default function page() {
+export default function Page() {
   const [text, setText] = useState("");
-  const [index, setIndex] = useState(0); // phrase index
-  const [subIndex, setSubIndex] = useState(0); // letter index
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
   const [blink, setBlink] = useState(true);
 
-  // Typing effect
   useEffect(() => {
     if (index === phrases.length) return;
 
@@ -45,7 +44,6 @@ export default function page() {
     return () => clearTimeout(timeout);
   }, [subIndex, index, deleting]);
 
-  // Cursor blink effect
   useEffect(() => {
     const blinkInterval = setInterval(() => {
       setBlink((prev) => !prev);
@@ -56,7 +54,6 @@ export default function page() {
   return (
     <div>
       <section className="container px-4 py-16 mx-auto lg:h-[34rem] lg:space-x-12 lg:flex lg:items-center">
-        {/* Left Side */}
         <div className="w-full text-center lg:text-left lg:w-1/2">
           <h1 className="text-3xl font-semibold leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             Blogify is{" "}
@@ -72,7 +69,6 @@ export default function page() {
           </p>
         </div>
 
-        {/* Right Side Image */}
         <div className="w-full mt-10 lg:mt-0 lg:w-1/2">
           <img
             src="main.svg"
@@ -82,7 +78,6 @@ export default function page() {
         </div>
       </section>
       <section className="container bg-gray-100 dark:bg-gray-800 px-4 py-16 mx-auto lg:flex lg:items-center lg:justify-between">
-        {/* Text Block */}
         <div className="w-full lg:w-1/2">
           <img
             src="/type.webp"
@@ -127,8 +122,6 @@ export default function page() {
             </Link>
           </SignedIn>
         </div>
-
-        {/* Supporting Image */}
       </section>
       <section className="container px-4 py-16 mx-auto">
         <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 md:text-3xl">
@@ -140,7 +133,6 @@ export default function page() {
         </p>
 
         <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Testimonial Card 1 */}
           <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
               <img
@@ -163,7 +155,6 @@ export default function page() {
             </p>
           </div>
 
-          {/* Testimonial Card 2 */}
           <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
               <img
@@ -186,7 +177,6 @@ export default function page() {
             </p>
           </div>
 
-          {/* Testimonial Card 3 */}
           <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
               <img
@@ -204,8 +194,8 @@ export default function page() {
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
-              “Finally, a platform that’s fast, beautiful, and doesn’t get in my
-              way when I’m writing.”
+              “Finally, a platform that&apos;s fast, beautiful, and doesn&apos;t
+              get in my way when I&apos;m writing.”
             </p>
           </div>
         </div>

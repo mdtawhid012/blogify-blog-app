@@ -37,8 +37,8 @@ export default function AboutPage() {
           </h2>
           <p className="text-gray-600 dark:text-gray-300">
             Blogify is open-source and community-driven. Feel free to submit
-            issues, improvements, or even create your own version. Let’s build
-            it together.
+            issues, improvements, or even create your own version. Let&apos;s
+            build it together.
           </p>
         </div>
       </div>

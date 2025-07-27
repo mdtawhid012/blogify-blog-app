@@ -89,7 +89,7 @@ export default function MyBlogsPage() {
       {posts.length === 0 ? (
         <div className="text-center py-12">
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            You haven't created any blog posts yet.
+            You haven&apos;t created any blog posts yet.
           </p>
           <Link href="/blog/create">
             <Button className="mt-4 cursor-pointer hover:scale-105 transition-all duration-300">
