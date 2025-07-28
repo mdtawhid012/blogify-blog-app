@@ -9,7 +9,7 @@
 - 🔐 **Authentication** with Clerk
 - 🛠️ **CRUD** operations for blogs (Create, Read, Update, Delete)
 - 🎨 **Dark Mode** with Tailwind and ShadCN UI
-- 🗃️ **Database** with Prisma and PostgreSQL (or your DB of choice)
+- 🗃️ **Database** with Prisma and PostgreSQL(neondb)
 - 🧠 **Author Display** – Each blog shows the author's name
 - 📄 **SEO Ready** – Meta data handling per route
 - ⚡ **Client-side Routing** using Next.js App Router
