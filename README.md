@@ -23,8 +23,3 @@
 - **Auth**: [Clerk](https://clerk.com/)
 - **Database**: [Prisma](https://www.prisma.io/)
 
----
-
-## Demonstration
-
-https://github.com/user-attachments/assets/2ee2d96e-8e44-4a5d-af18-4c95b2af587d
